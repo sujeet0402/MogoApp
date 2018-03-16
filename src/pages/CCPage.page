@@ -1,0 +1,31 @@
+<apex:page tabstyle="Book__c" Controller="BookController">
+    <apex:form >
+      <apex:pageBlock title="Book Details" >
+          <apex:pageBlockButtons >
+         <apex:commandButton value="Save" action="{!save}"/> &nbsp;&nbsp;&nbsp;
+         <apex:commandButton value="Save & New" action="{!saveandnew}"/>  &nbsp;&nbsp;
+        <apex:commandButton value="Cancel" action="{!cancel}"/>     
+          </apex:pageBlockButtons>
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                Book Name &nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:inputtext value="{!bname}" />          
+              </apex:outputtext>              
+         </apex:pageBlockSection>
+         <br></br>
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                Author &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:inputtext value="{!bAuthor}"/>          
+              </apex:outputtext>              
+         </apex:pageBlockSection>
+         <br></br>
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                Price &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:inputtext value="{!bPrice}" />          
+              </apex:outputtext>              
+         </apex:pageBlockSection> 
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

@@ -1,0 +1,6 @@
+<apex:page standardController="Account" doctype="">
+ <apex:form >
+   <apex:outputLink value="https://accounts.google.com/SignUp?service=mail&continue=https://mail.google.com/mail/?pc=topnav-about-en" target="_blank" onblur="">Gmail</apex:outputLink>
+  <apex:commandButton value="Browse" action="https://www.commvault.com/partners" id="Browse" />
+ </apex:form>
+</apex:page>

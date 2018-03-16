@@ -1,0 +1,5 @@
+<apex:page showHeader="False" sidebar="False">
+  <!-- Begin Default Content REMOVE THIS -->
+  Welcome {! $user.FirstName}...!
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

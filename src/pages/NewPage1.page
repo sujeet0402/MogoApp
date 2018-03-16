@@ -1,0 +1,30 @@
+<apex:page controller="NewPage1">
+ <apex:form >
+  <apex:pageBlock >
+       <apex:pageblockButtons >
+        <apex:commandButton value="Save" action="{!save}" />
+        <apex:commandButton value="Set&New" action="{!setandnew}" />
+        <apex:commandButton value="Cancel" action="{!Cancel}"/>
+      </apex:pageblockButtons>
+     <apex:pageBlockSection >
+     <apex:outputText >
+     Book Name
+     </apex:outputText>
+    <apex:inputText value="{!bname1}"/>
+   </apex:pageBlockSection>
+   <apex:pageBlockSection >
+     <apex:outputText >
+     Author
+     </apex:outputText>
+    <apex:inputText value="{!aname1}"/>
+   </apex:pageBlockSection>
+   <apex:pageBlockSection >
+     <apex:outputText >
+     Book Price
+     </apex:outputText>
+    <apex:inputText value="{!bprice1}"/>
+   </apex:pageBlockSection>
+   
+  </apex:pageBlock>
+ </apex:form>
+</apex:page>

@@ -1,0 +1,36 @@
+<apex:page controller="GetBook">
+  <apex:form >
+    <apex:PageBlock >
+        <apex:pageblockSection >
+            <apex:pageBlockSectionItem >
+                <apex:outputText >Enter the price  </apex:outputText>      
+                <apex:inputtext value="{!EnterValue}" />          
+            </apex:pageBlockSectionItem>
+            <apex:commandButton value="Fetch Book" action="{!fetched}"/>
+        </Apex:pageblockSection>
+       </Apex:PageBlock> 
+       <apex:pageBlock title="Output" >
+            <apex:pageBlockSection >
+                <apex:pageblockSectionItem >
+                <apex:outputtext >
+                Book Name 
+                </apex:outputtext>
+                <apex:inputtext value="{!bname}"/>          
+                </apex:pageblockSectionItem> 
+                <br></br>
+                <apex:pageblockSectionItem >
+                <apex:outputtext >
+                Author Name 
+                </apex:outputtext>
+                <apex:inputText value="{!aname}"/>          
+                </apex:pageblockSectionItem> <br></br>
+                <apex:pageblockSectionItem >
+                <apex:outputtext >
+                Price 
+                </apex:outputtext>
+                <apex:inputText value="{!bprice}"/>          
+                </apex:pageblockSectionItem> 
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+  </apex:form>
+</apex:page>

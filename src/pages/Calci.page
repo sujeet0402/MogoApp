@@ -1,0 +1,29 @@
+<apex:page Controller="AddController">
+<apex:form > 
+<apex:pageBlock >
+<apex:pageblockSection >
+     <apex:pageblockSectionItem >
+    <apex:outputText > first no: </apex:outputText>
+    <apex:inputtext value="{!num1}"/>
+     </apex:pageblockSectionitem>
+     <br/>
+<apex:pageblockSectionItem >
+    <apex:outputText > second no: </apex:outputText>
+    <apex:inputtext value="{!num2}"/>
+       </apex:pageblockSectionItem>
+       <br/>
+   <apex:pageblockSectionitem >
+    <apex:outputText > result </apex:outputText>
+     <apex:inputtext value="{!res}"/>
+    </apex:pageblockSectionitem>
+       <br/><br/>
+       </apex:pageBlockSection>
+        <apex:commandButton value="add" action="{!addition}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <apex:commandButton value="sub" action="{!substration}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <apex:commandButton value="mul" action="{!multiple}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+        <apex:commandButton value="div" action="{!divison}"/>&nbsp;&nbsp;&nbsp;&nbsp;
+
+
+        </apex:pageBlock>
+</apex:form>
+</apex:page>

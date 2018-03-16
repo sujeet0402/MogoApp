@@ -1,0 +1,17 @@
+{
+    "projectName": "Mogo Apperals",
+    "username": "sujeet0402@sfdc.com",
+    "id": "69280b20-db2e-11e7-8a1c-6d431fdc2cc9",
+    "namespace": "Mogo_Acct_Plan",
+    "orgType": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "instanceUrl": "https://mogoapparels-dev-ed.my.salesforce.com",
+    "workspace": "C:\\Users\\smohapatra\\Documents",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

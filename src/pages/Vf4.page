@@ -1,0 +1,6 @@
+<apex:page sidebar="False">
+ <apex:pageBlock title="Second Block">
+        </apex:pageBlock>
+        <apex:pageBlock title="Third Block">
+        </apex:pageBlock>
+</apex:page>

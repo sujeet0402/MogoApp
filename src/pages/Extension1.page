@@ -1,0 +1,12 @@
+<apex:page controller="NewClass" extensions="NewExtn,NewExtn1">
+  <apex:form >
+   <apex:pageBlock >
+       <apex:pageBlockSection >
+           <apex:pageBlockSectionItem >
+              <apex:inputTextarea value="{!message}"/>
+           </apex:pageBlockSectionItem>
+       </apex:pageBlockSection>
+   </apex:pageBlock>  
+  </apex:form>  
+
+</apex:page>

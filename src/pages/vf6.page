@@ -1,0 +1,11 @@
+<apex:page sidebar="false" standardController="contact">
+  <!-- Begin Default Content REMOVE THIS -->
+  <apex:pageBlock title="Contacts View">
+      <apex:pageBlockSection >
+          
+          
+          
+      </apex:pageBlockSection>
+  </apex:pageBlock>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>

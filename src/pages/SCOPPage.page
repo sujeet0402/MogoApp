@@ -1,0 +1,29 @@
+<!--- SOSL ---->
+<apex:page standardController="Book__c" recordsetvar="Books" showHeader="False">
+    <apex:form >
+     <apex:pageBlock title="DataList">
+        <!-- for datatype name : Collections --->
+          <apex:datalist var="book" value="{!books}" type="a">
+          <!--- System.debug(book.name) --->
+              <apex:outputText >{!Book.name}</apex:outputText> &nbsp;&nbsp;&nbsp;&nbsp;
+              <apex:outputText >{!Book.Author__c}</apex:outputText> &nbsp;&nbsp;&nbsp;&nbsp;
+              <apex:outputText >{!Book.Price__c}</apex:outputText>            
+          </apex:datalist>
+        </apex:pageBlock>   
+    <apex:pageBlock title="DataTable">
+        <!-- for datatype name : Collections --->
+          <apex:dataTable var="book" value="{!books}" border="2">
+          <!--- System.debug(book.name) --->
+            <apex:column headerValue="Book Name">
+              <apex:outputText >{!Book.name}</apex:outputText> &nbsp;&nbsp;&nbsp;&nbsp;
+              </apex:column>
+              <apex:column headerValue="Author Name" >
+              <apex:outputText >{!Book.Author__c}</apex:outputText> &nbsp;&nbsp;&nbsp;&nbsp;
+              </apex:column>
+              <apex:column headerValue="Price">
+              <apex:outputText >{!Book.Price__c}</apex:outputText>            
+              </apex:column>
+          </apex:dataTable>
+        </apex:pageBlock>   
+    </apex:form>
+</apex:page>

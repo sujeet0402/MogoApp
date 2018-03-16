@@ -1,0 +1,30 @@
+<!--- SOSL ---->
+<apex:page Controller="BringBooks">
+    <apex:form >
+     <apex:commandButton value="Fetch" action="{!fetchbooks}"/>
+     <apex:pageBlock title="DataList">
+        <!-- for datatype name : Collections --->
+          <apex:datalist var="book" value="{!books}" type="a">
+          <!--- System.debug(book.name) --->
+              <apex:outputText >{!Book.name}</apex:outputText> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+              <apex:outputText >{!Book.Author__c}</apex:outputText>        
+          </apex:datalist>
+        </apex:pageBlock>   
+    <apex:pageBlock title="DataTable">
+        <!-- for datatype name : Collections --->
+          <apex:dataTable var="book" value="{!books}" border="2">
+          <!--- System.debug(book.name) --->
+            <apex:column headerValue="Book Name">
+              <apex:outputText >{!Book.name}</apex:outputText> 
+              </apex:column>
+              <apex:column headerValue="Author" style="bold" >
+              <apex:outputText >{!Book.Author__c}</apex:outputText> 
+              </apex:column>
+              <apex:outputText >{!Book.name}</apex:outputText>   
+              <apex:column headerValue="Price" style="bold" >
+              <apex:outputText >{!Book.Price__c}</apex:outputText> 
+              </apex:column>       
+          </apex:dataTable>
+        </apex:pageBlock>   
+    </apex:form>
+</apex:page>

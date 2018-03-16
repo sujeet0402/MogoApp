@@ -1,0 +1,29 @@
+<apex:page controller="AddController">
+    <apex:form >
+      <apex:pageBlock title="Calculator" >
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                First Number &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:inputtext value="{!num1}" />          
+              </apex:outputtext>              
+         </apex:pageBlockSection>
+         <br></br>
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                Second number 
+                <apex:inputtext value="{!num2}" />          
+              </apex:outputtext>              
+         </apex:pageBlockSection>
+         <br></br>
+          <apex:pageBlockSection >
+              <apex:outputtext >
+                Result &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <apex:inputtext value="{!Result}"/>          
+              </apex:outputtext>              
+         </apex:pageBlockSection> 
+         <apex:commandButton value="Add"/> &nbsp;&nbsp;
+         <apex:commandButton value="Substract"/> &nbsp;&nbsp;
+         <apex:commandButton value="Clear"/>
+      </apex:pageBlock>
+    </apex:form>
+</apex:page>

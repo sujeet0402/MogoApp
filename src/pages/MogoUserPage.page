@@ -1,0 +1,26 @@
+<apex:page sidebar="false" showHeader="false" tabStyle="opportunity" standardStylesheets="True" controller="CustDetails">
+    <apex:form >
+        <apex:pageBlock title="First Block">
+            <apex:pageBlockSection title="1st Section">
+                <apex:pageBlockSectionItem >
+                    First name <apex:inputtext value="{!fname}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Second name <apex:inputtext value="{!lname}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                  contact no <apex:inputtext value="{!cno}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    Address <apex:inputtext value="{!address}"/>
+                </apex:pageBlockSectionItem>
+                <apex:pageBlockSectionItem >
+                    <apex:commandButton value="Submit"/> 
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                </apex:pageBlockSectionItem>
+            </apex:pageBlockSection>
+        </apex:pageBlock>
+        
+    </apex:form>
+</apex:page>

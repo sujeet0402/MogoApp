@@ -1,0 +1,7 @@
+<apex:page title="False" sidebar="True" showHeader="true" tabStyle="Book__c">
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations</h1>
+  This is your new Page: VF2 <br></br>
+  <p> what is this..? </p>
+  <!-- End Default Content REMOVE THIS -->
+</apex:page>
